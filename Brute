@@ -1,0 +1,97 @@
+############################################BRUTEFORCING BY FRAT1234 ####################################
+
+
+                                          #-------------------------------------------- #######################
+                                          #-------------------------------------------- #######################
+                                          #-------------------------------------------- #######################
+                                          #-------|||||| ------------------ ||||| ----- #######################
+                                         # -------------------|||||||------------------ #######################
+######################################     #_________________|||||||||________________  #######################
+#######################                     # ______________________________________ #######################
+######################                       #  ################################## 
+                                             #  ---------------------------------  #######################
+                                             #   ------------------------------ #######################
+                                                ###--------------------------- #######################
+                                                  ## - - - - - - - - - - - - #######################
+                                                   #  ---------------------###################
+
+
+####MEMORIZZAZIONE DATI#######
+
+defmodule Bruteforce do
+
+  def memorizza(username,password,msg) do
+      
+      Enum.take(username,15)
+     
+        IO.puts "Usernames memorizzate"
+      
+      Enum.take(password,15)
+      
+        IO.puts "Password memorizzate"
+      
+
+      
+      if memorizza do
+    
+   IO.puts msg
+      
+      end 
+    
+end
+      
+      
+      
+     def memorizza("","",msg) do 
+        IO.puts "Errore,non hai inserito nessun username o password nella lista"
+         
+end
+end
+    
+    
+   Bruteforce.memorizza(username,password,msg)
+   Bruteforce.memorizza(username,password,msg)
+
+
+    
+    
+   
+      
+      
+
+username= File.stream!("username.txt")
+
+password= File.stream!("password.txt")
+
+msg="Bravo hai inserito correttamente tutto,l'attacco è appena iniziato"
+
+ 
+
+
+
+
+####SCRIPT AVVIATO########
+      
+
+
+    
+    
+    
+
+
+    
+      
+    
+     
+    
+
+#####CODICE MODIFICABILE#####
+    
+
+
+
+
+
+
+      
+
