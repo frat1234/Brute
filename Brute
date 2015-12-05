@@ -8,12 +8,12 @@
                                          # -------------------|||||||------------------ #######################
 ######################################     #_________________|||||||||________________  #######################
 #######################                     # ______________________________________ #######################
-######################                       #  ################################## 
+######################                       #  ################################## #######################
                                              #  ---------------------------------  #######################
                                              #   ------------------------------ #######################
                                                 ###--------------------------- #######################
                                                   ## - - - - - - - - - - - - #######################
-                                                   #  ---------------------###################
+                                                   #  --------------------- ###################
 
 
 ####MEMORIZZAZIONE DATI#######
@@ -26,72 +26,69 @@ defmodule Bruteforce do
      
         IO.puts "Usernames memorizzate"
       
-      Enum.take(password,15)
-      
-        IO.puts "Password memorizzate"
       
 
+
+end
+
+   
       
-      if memorizza do
+   defp memorizza(username,password,msg) do
+        
+         Enum.take(password,15)
+      
+        IO.puts "Password memorizzate"
+       
+
+       
+        if memorizza do
     
    IO.puts msg
-      
-      end 
+       
+       
+       
+end 
     
 end
-      
-      
-      
-     def memorizza("","",msg) do 
+
+    
+
+    
+    
+    
+    def memorizza("","",msg) do 
         IO.puts "Errore,non hai inserito nessun username o password nella lista"
-         
+            
+ end       
+        
+
+ 
+
+      
+
 end
-end
+      
+      
+      
+#######CODICE MODIFICABILE - MEMORIZZAZIONE DATI########     
+        
+
+   Bruteforce.memorizza(username,password,msg)
+   username = File.stream!("username.txt")
+   password = File.stream!("password.txt")
+   msg = "Bravo,hai inserito correttamente le due liste ,lo script si avvierà a breve"
+
     
     
-   Bruteforce.memorizza(username,password,msg)
-   Bruteforce.memorizza(username,password,msg)
+
+
+
 
 
     
     
    
       
-      
-
-username= File.stream!("username.txt")
-
-password= File.stream!("password.txt")
-
-msg="Bravo hai inserito correttamente tutto,l'attacco è appena iniziato"
-
- 
-
-
-
-
+    
 ####SCRIPT AVVIATO########
       
-
-
-    
-    
-    
-
-
-    
-      
-    
-     
-    
-
-#####CODICE MODIFICABILE#####
-    
-
-
-
-
-
-
-      
-
